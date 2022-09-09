@@ -1,0 +1,102 @@
+# Base16 {{scheme-name}} by {{scheme-author}}
+base00: &base00 "#{{base00-hex}}" # defaultBackground
+base01: &base01 "#{{base01-hex}}" # lighterBackground
+base02: &base02 "#{{base02-hex}}" # selectionBackground
+base03: &base03 "#{{base03-hex}}" # comments
+base04: &base04 "#{{base04-hex}}" # darkForeground
+base05: &base05 "#{{base05-hex}}" # defaultForeground
+base06: &base06 "#{{base06-hex}}" # lightForeground
+base07: &base07 "#{{base07-hex}}" # lightBackground
+base08: &base08 "#{{base08-hex}}" # variables
+base09: &base09 "#{{base09-hex}}" # constants
+base0A: &base0A "#{{base0A-hex}}" # classes
+base0B: &base0B "#{{base0B-hex}}" # strings
+base0C: &base0C "#{{base0C-hex}}" # support
+base0D: &base0D "#{{base0D-hex}}" # functions
+base0E: &base0E "#{{base0E-hex}}" # keywords
+base0F: &base0F "#{{base0F-hex}}" # deprecated
+
+k9s:
+  body:
+    fgColor: *base05
+    bgColor: *base00
+    logoColor: *base06
+  prompt:
+    fgColor: *base05
+    bgColor: *base00
+    suggestColor: *base06
+  info:
+    fgColor: *base05
+    sectionColor: *base06
+  dialog:
+    fgColor: *base05
+    bgColor: *base00
+    buttonFgColor: *base05
+    buttonBgColor: *base00
+    buttonFocusFgColor: *base04
+    buttonFocusBgColor: *base01
+    labelFgColor: *base08
+    fieldFgColor: *base0B
+  frame:
+    border:
+      fgColor: *base05
+      focusColor: *base0B
+    menu:
+      fgColor: *base05
+      keyColor: *base0E
+      numKeyColor: *base0E
+    crumbs:
+      fgColor: *base05
+      bgColor: *base00
+      activeColor: *base02
+    status:
+      newColor: *base05
+      modifyColor: *base0E
+      addColor: *base0A
+      errorColor: *base08
+      pendingColor: *base09
+      highlightcolor: *base0B
+      killColor: *base08
+      completedColor: *base0F
+    title:
+      fgColor: *base05
+      bgColor: *base00
+      highlightColor: *base0B
+      counterColor: *base08
+      filterColor: *base09
+  views:
+    charts:
+      bgColor: *base00
+      defaultDialColors:
+        - *base05
+        - *base00
+      defaultChartColors:
+        - *base05
+        - *base00
+    table:
+      fgColor: *base05
+      bgColor: *base00
+      cursorFgColor: *base00
+      cursorBgColor: *base05
+      markColor: *base0B
+      header:
+        fgColor: *base04
+        bgColor: *base00
+        sorterColor: *base0B
+    xray:
+      fgColor: *base05
+      bgColor: *base00
+      cursorColor: *base05
+      graphicColor: *base0B
+      showIcons: false
+    yaml:
+      keyColor: *base08
+      colonColor: *base05
+      valueColor: *base05
+    logs:
+      fgColor: *base05
+      bgColor: *base00
+      indicator:
+        fgColor: *base04
+        bgColor: *base00
+
